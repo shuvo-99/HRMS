@@ -1,13 +1,18 @@
 
 import Navbar from "./navbar.tsx";
 import {Outlet} from "react-router-dom";
+import Grid from "@mui/material/Grid";
 
 const Home = () => {
     return (
-        <div>
-            <Navbar></Navbar>
-            <Outlet></Outlet>
-        </div>
+        <Grid container spacing={2}>
+            <Grid item xs={2}>
+                <Navbar></Navbar>
+            </Grid>
+            <Grid item xs={10}>
+                <Outlet></Outlet>
+            </Grid>
+        </Grid>
     );
 };
 
