@@ -3,15 +3,33 @@ import {Link} from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <div>
-            <Link to='/'>Dashboard</Link>
-            <Link to='/employees'>Employees</Link>
-            <Link to='/teamManagement'>Team Management</Link>
-            <Link to='/myCalender'>My Calender</Link>
-            <Link to='/attendance'>Attendance</Link>
-            <Link to='/payroll'>Payroll</Link>
-            <Link to='/userManagement'>User Management</Link>
-            <Link to='/setting'>Setting</Link>
+        <div >
+            <ul style={{ listStyleType: 'none' }}>
+                <li>
+                    <Link style={{textDecoration:'None', color:'white'}} to='/'>Dashboard</Link>
+                </li>
+                <li>
+                    <Link style={{textDecoration:'None', color:'white'}} to='/employees'>Employees</Link>
+                </li>
+                <li>
+                    <Link style={{textDecoration:'None', color:'white'}} to='/teamManagement'>Team Management</Link>
+                </li>
+                <li>
+                    <Link style={{textDecoration:'None', color:'white'}} to='/myCalender'>My Calender</Link>
+                </li>
+                <li>
+                    <Link style={{textDecoration:'None', color:'white'}} to='/attendance'>Attendance</Link>
+                </li>
+                <li>
+                    <Link style={{textDecoration:'None', color:'white'}} to='/payroll'>Payroll</Link>
+                </li>
+                <li>
+                    <Link style={{textDecoration:'None', color:'white'}} to='/userManagement'>User Management</Link>
+                </li>
+                <li>
+                    <Link style={{textDecoration:'None', color:'white'}} to='/setting'>Setting</Link>
+                </li>
+            </ul>
         </div>
     );
 };
